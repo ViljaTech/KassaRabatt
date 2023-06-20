@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_0" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFit" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" image="BootSplashLogo" translatesAutoresizingMaskIntoConstraints="NO" id="EZH-ip-NE8">
+                                <rect key="frame" x="60" y="164" width="200" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="240" id="Qjv-Tu-yEz"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="EZH-ip-NE8" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="8J7-b5-aco"/>
+                            <constraint firstItem="EZH-ip-NE8" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="GgG-0r-aDg"/>
+                            <constraint firstItem="EZH-ip-NE8" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Hfh-qN-8lZ"/>
+                            <constraint firstItem="EZH-ip-NE8" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="J4e-Hc-W24"/>
+                            <constraint firstItem="EZH-ip-NE8" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="TZf-PQ-ckm"/>
+                            <constraint firstItem="EZH-ip-NE8" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="X7g-Cl-QlB"/>
+                            <constraint firstItem="EZH-ip-NE8" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="lOX-eM-aPK"/>
+                            <constraint firstItem="EZH-ip-NE8" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="x3l-nE-bHt"/>
+                            <constraint firstItem="EZH-ip-NE8" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="yaO-sA-Axc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BootSplashLogo" width="200" height="152"/>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
