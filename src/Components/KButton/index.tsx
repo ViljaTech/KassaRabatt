@@ -14,6 +14,7 @@ export const KButton = (props: KButtonProps) => {
       style={[styles.btnViewStyle, props.btnViewStyle]}
       disabled={props.disabled ? true : false}
       onPress={props.onPress}>
+      {props.imgUrl && <Image source={props.imgUrl} style={styles.imgStyles} />}
       {props.title ? (
         <Text style={{...styles.btnTxtStyle, ...props.txtStyle}}>
           {props.title}
@@ -21,7 +22,6 @@ export const KButton = (props: KButtonProps) => {
       ) : (
         <Text>{''}</Text>
       )}
-      {props.imgUrl && <Image source={props.imgUrl} style={styles.imgStyles} />}
     </TouchableOpacity>
   );
 };

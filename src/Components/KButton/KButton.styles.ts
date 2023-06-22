@@ -21,7 +21,9 @@ export const KButtonStyles = (colors: colorType, props: KButtonProps) => {
     },
     imgStyles: {
       resizeMode: 'contain',
-      marginLeft: 5,
+      width: 18,
+      height: 18,
+      marginRight: 8,
     },
   });
 };

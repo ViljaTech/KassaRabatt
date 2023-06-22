@@ -11,7 +11,7 @@ export const lightColors = {
   textColor: '#000000',
   deviderColor: '#E8E8E8',
   textGrayColor: '#808080',
-  redColor: '#FF5C5C',
+  redColor: '#E0462A',
 };
 export const darkColors = {
   ...lightColors,

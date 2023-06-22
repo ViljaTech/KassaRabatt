@@ -12,6 +12,7 @@ export type PreRootStackParamList = {
   SignInWithBank: undefined;
   PasswordRecovery: undefined;
   CreateNewPassword: undefined;
+  RabateDetails: {data: any};
 };
 
 export type PostRootStackParamList = {
@@ -20,6 +21,7 @@ export type PostRootStackParamList = {
   Favorite: undefined;
   Search: undefined;
   Settings: undefined;
+  RabateDetails: {data: any};
 };
 
 export type TabBarType = {

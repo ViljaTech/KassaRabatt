@@ -48,7 +48,7 @@ export const KCard = (props: KCardProps) => {
           ))}
         </View>
         <Text style={styles.cardBottomTextStyle}>Rabatt</Text>
-        <Text style={styles.percentageTextStyle}>{props.percentage}</Text>
+        <Text style={styles.percentageTextStyle}>{props.percentage}%</Text>
       </View>
     );
   };

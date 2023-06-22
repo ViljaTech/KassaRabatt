@@ -69,13 +69,14 @@ export const KCardStyles = (colors: colorType, props: KCardProps) => {
     },
     companyLogoStyle: {
       width: '100%',
-      // height: 90,
+      height: 80,
     },
     titleViewStyle: {
       flexDirection: 'row',
       paddingHorizontal: 16,
       alignItems: 'center',
       justifyContent: 'center',
+      marginTop: 6,
     },
     titleTextStyle: {
       color: colors.textColor,

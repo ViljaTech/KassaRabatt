@@ -15,7 +15,7 @@ import {SafeAreaProvider, SafeAreaView} from 'react-native-safe-area-context';
 import CustomStatusBar from '../../Components/CustomStatusBar';
 import {useAppData} from '../../Providers/AppConfig';
 import {homeStyle} from './Home.styles';
-import {LoopData, Options, cardData} from '../../Resources/DammyData/Home';
+import {LoopData, Options, cardData} from '../../Resources/DammyData/DammyData';
 import Carousel, {Pagination} from 'react-native-snap-carousel';
 import {KButton} from '../../Components/KButton';
 import {KCard} from '../../Components/KCard';
@@ -127,11 +127,12 @@ const Home: React.FC<HomeProp> = ({navigation}) => {
       <View style={styles.cardViewStyle}>
         {cardData.map((card, index) => (
           <KCard
+            key={index}
             addFavorite={() => console.log('cc')}
             title={card.title}
             imgUrl={card.logo}
             percentage={card.percentage}
-            onPress={() => console.log('cc')}
+            onPress={() => navigation.navigate('RabateDetails', {data: card})}
           />
         ))}
       </View>
