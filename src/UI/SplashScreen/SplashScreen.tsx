@@ -5,9 +5,9 @@ import {
   PostRootStackParamList,
   PreRootStackParamList,
 } from '../../Navigation/NavigationTypes';
-import GeneralStatusBarColor from '../../Components/GeneralStatusBarColorStyles';
 import {useAppData} from '../../Providers/AppConfig';
 import {splashScreenStyles} from './SplashScreen.styles';
+import CustomStatusBar from '../../Components/CustomStatusBar';
 type NavigationProp = NativeStackScreenProps<
   PreRootStackParamList,
   'SplashScreen'
@@ -19,7 +19,7 @@ const SplashScreen: React.FC<SplashScreenProp> = ({navigation}) => {
   const styles = splashScreenStyles();
   return (
     <>
-      <GeneralStatusBarColor backgroundColor="#FDA228" />
+      <CustomStatusBar backgroundColor="#FDA228" barStyle="dark-content" />
       <SafeAreaView
         style={{
           flex: 1,

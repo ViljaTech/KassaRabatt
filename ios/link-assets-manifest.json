@@ -2,8 +2,20 @@
   "migIndex": 1,
   "data": [
     {
-      "path": "assets/fonts/NewYorkMedium.ttf",
+      "path": "assets/fonts/NewYorkMedium-Bold.ttf",
+      "sha1": "04f6ea48762b36cd5b26a44169b258b09567a9fb"
+    },
+    {
+      "path": "assets/fonts/NewYorkMedium-Medium.ttf",
       "sha1": "fd59609c0b943b4df6c67662df96cf742607e9b2"
+    },
+    {
+      "path": "assets/fonts/NewYorkMedium-Regular.ttf",
+      "sha1": "2adbb615e2df19569ec49c3171d48f4a2165228a"
+    },
+    {
+      "path": "assets/fonts/NewYorkMedium-Semibold.ttf",
+      "sha1": "daafff0d743440fa711bdf9f52cee4d61deb81db"
     },
     {
       "path": "assets/fonts/Poppins-Bold.ttf",

@@ -6,7 +6,12 @@ type SubNavigator<T extends ParamListBase> = {
 
 export type PreRootStackParamList = {
   SplashScreen: undefined;
+  Login: undefined;
+  SignUp: undefined;
   TabBar: undefined;
+  SignInWithBank: undefined;
+  PasswordRecovery: undefined;
+  CreateNewPassword: undefined;
 };
 
 export type PostRootStackParamList = {

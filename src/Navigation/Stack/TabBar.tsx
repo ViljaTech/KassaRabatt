@@ -14,6 +14,12 @@ import {StorageKeys} from '../../Storage';
 import {navigationStyles} from '../Navigation.styles';
 import {isIphoneBig} from '../../Helper/iphoneHelper';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import {
+  FavoriteIcon,
+  HomeIcon,
+  SearchIcon,
+  SettingsIcon,
+} from '../../Resources/Svg/Svg';
 // import FastImage from 'react-native-fast-image';
 
 const Tab = createBottomTabNavigator<TabBarType>();
@@ -51,7 +57,7 @@ export const TabBar = ({}) => {
         headerShown: false,
         tabBarShowLabel: false,
         tabBarStyle: {
-          height: Platform.OS === 'ios' ? (isIphoneBig() ? 90 : 70) : 70,
+          height: Platform.OS === 'ios' ? (isIphoneBig() ? 100 : 90) : 70,
           backgroundColor: colors.whiteColor,
         },
       }}>
@@ -62,7 +68,14 @@ export const TabBar = ({}) => {
           tabBarIcon: (focused: any) => {
             return (
               <TabIcon focused={focused}>
-                <Text style={{color: focused.focused ? '#FDA228' : '#000000'}}>
+                <HomeIcon
+                  fillColor={focused.focused ? colors.appColor : '#000000'}
+                />
+                <Text
+                  style={[
+                    styles.tabTextStyle,
+                    {color: focused.focused ? '#FDA228' : '#000000'},
+                  ]}>
                   Home
                 </Text>
               </TabIcon>
@@ -77,7 +90,15 @@ export const TabBar = ({}) => {
           tabBarIcon: (focused: any) => {
             return (
               <TabIcon focused={focused}>
-                <Text style={{color: focused.focused ? '#FDA228' : '#000000'}}>
+                <FavoriteIcon
+                  fillColor={focused.focused ? colors.appColor : '#000000'}
+                />
+                <Text
+                  style={[
+                    styles.tabTextStyle,
+                    ,
+                    {color: focused.focused ? '#FDA228' : '#000000'},
+                  ]}>
                   Favorite
                 </Text>
               </TabIcon>
@@ -92,7 +113,15 @@ export const TabBar = ({}) => {
           tabBarIcon: (focused: any) => {
             return (
               <TabIcon focused={focused}>
-                <Text style={{color: focused.focused ? '#FDA228' : '#000000'}}>
+                <SearchIcon
+                  fillColor={focused.focused ? colors.appColor : '#000000'}
+                />
+                <Text
+                  style={[
+                    styles.tabTextStyle,
+                    ,
+                    {color: focused.focused ? '#FDA228' : '#000000'},
+                  ]}>
                   Search
                 </Text>
               </TabIcon>
@@ -106,7 +135,14 @@ export const TabBar = ({}) => {
         options={{
           tabBarIcon: (focused: any) => (
             <TabIcon focused={focused}>
-              <Text style={{color: focused.focused ? '#FDA228' : '#000000'}}>
+              <SettingsIcon
+                fillColor={focused.focused ? colors.appColor : '#000000'}
+              />
+              <Text
+                style={[
+                  styles.tabTextStyle,
+                  {color: focused.focused ? '#FDA228' : '#000000'},
+                ]}>
                 Settings
               </Text>
             </TabIcon>

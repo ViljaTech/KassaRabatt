@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" image="BootSplashLogo" translatesAutoresizingMaskIntoConstraints="NO" id="EZH-ip-NE8">
-                                <rect key="frame" x="60" y="164" width="200" height="240"/>
+                                <rect key="frame" x="110" y="164" width="100" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="240" id="Qjv-Tu-yEz"/>
                                 </constraints>
@@ -45,7 +45,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="BootSplashLogo" width="200" height="152"/>
+        <image name="BootSplashLogo" width="100" height="76"/>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

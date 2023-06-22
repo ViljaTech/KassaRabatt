@@ -18,7 +18,7 @@ export const AppNavigationProvider = () => {
         navigationRef.current = val;
       }}
       onReady={() => {
-        // RNBootSplash.hide({fade: true});
+        RNBootSplash.hide({fade: true});
         routeNameRef.current = navigationRef.current?.getCurrentRoute()?.name;
       }}
       onStateChange={async () => {

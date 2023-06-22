@@ -48,7 +48,6 @@ export interface AppDataContextProps {
   images: imageType;
   currentTheme: string;
   setAppTheme: (_value: string) => void;
-
   authToken: string;
   setAuthToken: (_value: string) => void;
   removeData: (_value: StorageKeys) => void;

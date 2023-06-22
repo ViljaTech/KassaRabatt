@@ -61,12 +61,15 @@
 		<string>Octicons.ttf</string>
 		<string>Zocial.ttf</string>
 		<string>Fontisto.ttf</string>
-		<string>NewYorkMedium.ttf</string>
 		<string>Poppins-Bold.ttf</string>
 		<string>SF-Pro-Display-Medium.otf</string>
 		<string>SF-Pro-Display-Regular.otf</string>
 		<string>SF-Pro-Display-Semibold.otf</string>
 		<string>SF-Pro-Display-Bold.otf</string>
+		<string>NewYorkMedium-Bold.ttf</string>
+		<string>NewYorkMedium-Medium.ttf</string>
+		<string>NewYorkMedium-Regular.ttf</string>
+		<string>NewYorkMedium-Semibold.ttf</string>
 	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>

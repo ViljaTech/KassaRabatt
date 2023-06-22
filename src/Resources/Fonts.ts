@@ -1,7 +1,25 @@
 export const Fonts = {
-  NewYorkMedium: (size = 12) => {
+  NewYorkMediumBold: (size = 12) => {
     return {
-      fontFamily: 'New York Medium',
+      fontFamily: 'New York Medium Bold',
+      fontSize: size,
+    };
+  },
+  NewYorkMediumSemiBold: (size = 12) => {
+    return {
+      fontFamily: 'New York Medium Semibold',
+      fontSize: size,
+    };
+  },
+  NewYorkMediumMedium: (size = 12) => {
+    return {
+      fontFamily: 'New York Medium Medium',
+      fontSize: size,
+    };
+  },
+  NewYorkMediumRegular: (size = 12) => {
+    return {
+      fontFamily: 'New York Medium Regular',
       fontSize: size,
     };
   },

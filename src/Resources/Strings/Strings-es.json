@@ -1,1 +1,22 @@
-{}
+{
+  "signIn": "Sign In",
+  "signInWithBank": "Sign In with bank id",
+  "or": "OR",
+  "email": "Email",
+  "password": "Password",
+  "forgotPassword": "Forgot Password?",
+  "dontHaveAccount": "Don’t have an account?",
+  "signUp": "Sign Up",
+  "signUpWithBank": "Sign Up with bank id",
+  "repeatPassword": "Repeat Password",
+  "haveAnAccount": "Already have an account?",
+  "bankId": "Bank ID",
+  "personalNumber": "Personal Number",
+  "passwordRecovery": "Password Recovery",
+  "submit": "submit",
+  "passwordRecoveryMsg": "We’ll send you a link for password recovery",
+  "createNewPassword": "Create New Password",
+  "newPassword": "New Password",
+  "repeatNewPassword": "Repeat New Password",
+  "done": "Done"
+}

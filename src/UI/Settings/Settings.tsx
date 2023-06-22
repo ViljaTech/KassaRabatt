@@ -2,7 +2,10 @@ import {View, Text} from 'react-native';
 import React from 'react';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {PostRootStackParamList} from '../../Navigation/NavigationTypes';
-import {SafeAreaView} from 'react-native-safe-area-context';
+import {SafeAreaProvider, SafeAreaView} from 'react-native-safe-area-context';
+import {useAppData} from '../../Providers/AppConfig';
+import CustomStatusBar from '../../Components/CustomStatusBar';
+import {settingsStyle} from './Settings.styles';
 type NavigationProp = NativeStackScreenProps<
   PostRootStackParamList,
   'Settings'
@@ -10,10 +13,20 @@ type NavigationProp = NativeStackScreenProps<
 
 interface SettingsProp extends NavigationProp {}
 const Settings: React.FC<SettingsProp> = ({navigation}) => {
+  const {colors} = useAppData();
+  const styles = settingsStyle();
   return (
-    <SafeAreaView>
-      <Text>Settings</Text>
-    </SafeAreaView>
+    <>
+      <CustomStatusBar
+        backgroundColor={colors.appColor}
+        barStyle="dark-content"
+      />
+      <SafeAreaProvider>
+        <SafeAreaView style={styles.mainContainerStyle}>
+          <Text>Settings</Text>
+        </SafeAreaView>
+      </SafeAreaProvider>
+    </>
   );
 };
 
