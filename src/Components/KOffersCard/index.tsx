@@ -8,7 +8,7 @@ import {KOffersCardProps} from './KOfforsTypes';
 
 export const KOffersCard = (props: KOffersCardProps) => {
   const appData = useAppData();
-  const {images, colors} = useAppData();
+  const {images, colors, strings} = useAppData();
   const styles = KOffersCardStyles(appData.colors, props);
 
   return (
@@ -18,7 +18,7 @@ export const KOffersCard = (props: KOffersCardProps) => {
         <View style={styles.topSubViewStyle}>
           <Image source={images.qr} style={styles.qrIconStyle} />
           <KButton
-            title="Show Code"
+            title={strings.showCode}
             onPress={() => props.onPress()}
             btnViewStyle={styles.showCodeBtnStyle}
             txtStyle={styles.showCodeBtnTextStyle}

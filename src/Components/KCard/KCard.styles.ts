@@ -83,17 +83,20 @@ export const KCardStyles = (colors: colorType, props: KCardProps) => {
       ...Fonts.NewYorkMediumRegular(15),
       letterSpacing: 0.07,
       marginTop: 6,
+      fontWeight: '400',
     },
     cardBottomTextStyle: {
       color: colors.textColor,
       ...Fonts.SFProDisplayRegular(14),
       letterSpacing: 0.07,
       marginRight: 6,
+      fontWeight: '400',
     },
     percentageTextStyle: {
       color: colors.textColor,
       ...Fonts.SFProDisplayBold(18),
       letterSpacing: 0.5,
+      fontWeight: '700',
     },
   });
 };

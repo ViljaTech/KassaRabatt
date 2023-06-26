@@ -7,7 +7,7 @@ import {KCardProps} from './KCardTypes';
 
 export const KCard = (props: KCardProps) => {
   const appData = useAppData();
-  const {images, colors} = useAppData();
+  const {images, strings} = useAppData();
   const styles = KCardStyles(appData.colors, props);
   const keys = [...Array(15).keys()];
 
@@ -47,7 +47,7 @@ export const KCard = (props: KCardProps) => {
             <View key={index} style={styles.circleStyle}></View>
           ))}
         </View>
-        <Text style={styles.cardBottomTextStyle}>Rabatt</Text>
+        <Text style={styles.cardBottomTextStyle}>{strings.rabatt}</Text>
         <Text style={styles.percentageTextStyle}>{props.percentage}%</Text>
       </View>
     );

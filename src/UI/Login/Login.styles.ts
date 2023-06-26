@@ -60,6 +60,7 @@ export const loginStyles = () => {
       color: colors.textColor,
       ...Fonts.NewYorkMediumBold(17),
       letterSpacing: 0.3,
+      fontWeight: '700',
     },
     closeIconTouchViewStyle: {
       width: 40,
@@ -90,6 +91,7 @@ export const loginStyles = () => {
       ...Fonts.SFProDisplayMedium(14),
       letterSpacing: 1,
       textTransform: 'uppercase',
+      fontWeight: '500',
     },
     deviderSectionViewStyle: {
       marginTop: 32,
@@ -129,6 +131,7 @@ export const loginStyles = () => {
       textDecorationLine: 'underline',
       textAlign: 'right',
       letterSpacing: 0.5,
+      fontWeight: '400',
     },
     btnSectionViewStyle: {
       marginTop: 40,
@@ -143,12 +146,14 @@ export const loginStyles = () => {
       ...Fonts.SFProDisplayRegular(14),
       color: colors.blackColor,
       letterSpacing: 0.07,
+      fontWeight: '400',
     },
     signInViewStyle: {},
     signInTxtStyle: {
       ...Fonts.SFProDisplayRegular(14),
       color: colors.appColor,
       letterSpacing: 0.07,
+      fontWeight: '400',
     },
   });
 };

@@ -48,6 +48,7 @@ export const passwordRecoveryStyles = () => {
       color: colors.textColor,
       ...Fonts.NewYorkMediumBold(17),
       letterSpacing: 0.3,
+      fontWeight: '700',
     },
     closeIconTouchViewStyle: {
       width: 40,
@@ -74,6 +75,7 @@ export const passwordRecoveryStyles = () => {
       ...Fonts.SFProDisplayRegular(15),
       letterSpacing: 0.07,
       textAlign: 'center',
+      fontWeight: '400',
     },
     inputSectionViewStyle: {
       marginTop: 40,
@@ -92,12 +94,14 @@ export const passwordRecoveryStyles = () => {
       ...Fonts.SFProDisplayRegular(14),
       color: colors.blackColor,
       letterSpacing: 0.07,
+      fontWeight: '400',
     },
     signupViewStyle: {},
     signupTxtStyle: {
       ...Fonts.SFProDisplayRegular(14),
       color: colors.appColor,
       letterSpacing: 0.07,
+      fontWeight: '400',
     },
   });
 };

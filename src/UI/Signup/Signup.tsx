@@ -44,6 +44,7 @@ const Signup: React.FC<SignupProp> = ({navigation}) => {
         <Text style={styles.headerTextStyle}>{strings.signUp}</Text>
         <TouchableOpacity
           activeOpacity={0.8}
+          onPress={() => navigation.goBack()}
           style={styles.closeIconTouchViewStyle}>
           <Image source={images.closeIcon} style={styles.closeIconStyle} />
         </TouchableOpacity>
@@ -134,7 +135,7 @@ const Signup: React.FC<SignupProp> = ({navigation}) => {
   const renderBtnSection = () => {
     return (
       <View style={styles.btnSectionViewStyle}>
-        <KButton title={strings.signIn} onPress={() => console.log('cc')} />
+        <KButton title={strings.signUp} onPress={() => console.log('cc')} />
       </View>
     );
   };
@@ -172,6 +173,7 @@ const Signup: React.FC<SignupProp> = ({navigation}) => {
                 {renderHeaderSection()}
                 <ScrollView
                   bounces={false}
+                  automaticallyAdjustKeyboardInsets={true}
                   showsVerticalScrollIndicator={false}
                   contentContainerStyle={styles.contentContainerStyle}>
                   <View style={styles.middleContainerStyle}>

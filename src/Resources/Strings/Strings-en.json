@@ -1,4 +1,5 @@
 {
+  "kassRabatt": "KassRabatt",
   "signIn": "Sign In",
   "signInWithBank": "Sign In with bank id",
   "or": "OR",
@@ -18,5 +19,20 @@
   "createNewPassword": "Create New Password",
   "newPassword": "New Password",
   "repeatNewPassword": "Repeat New Password",
-  "done": "Done"
+  "done": "Done",
+  "qrCodes": "QR Codes",
+  "rebateUpTo": "Rebate Up to",
+  "rebateOnAllScrewdrivers": "Rebate on all screwdrivers",
+  "addToFavorite": "Add to Favorite",
+  "showCode": "Show Code",
+  "rabatt": "Rabatt",
+  "youDontFavoriteRebates": "You don’t have Favorite Rebates",
+  "noResults": "No Results",
+  "cancel": "Cancel",
+  "settings": "Settings",
+  "editProfile": "Edit Profile",
+  "changePassword": "Change password",
+  "save": "Save",
+  "logout": "Logout",
+  "currentPassword": "Current Password"
 }

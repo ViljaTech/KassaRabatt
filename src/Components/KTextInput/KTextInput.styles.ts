@@ -8,6 +8,7 @@ export const KTextInputStyles = (colors: colorType, props: KTextInputProps) => {
     lableTextStyle: {
       color: colors.textGrayColor,
       ...Fonts.SFProDisplayMedium(14),
+      fontWeight: '500',
     },
     textInputViewStyle: {
       flexDirection: 'row',
@@ -25,6 +26,7 @@ export const KTextInputStyles = (colors: colorType, props: KTextInputProps) => {
       color: colors.blackColor,
       ...Fonts.SFProDisplayMedium(17),
       letterSpacing: 0.5,
+      fontWeight: '500',
     },
     secureViewStyle: {
       marginLeft: 10,

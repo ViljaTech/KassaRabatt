@@ -24,6 +24,7 @@ export const KOffersCardStyles = (
       color: colors.redColor,
       letterSpacing: 0.5,
       ...Fonts.SFProDisplayMedium(24),
+      fontWeight: '500',
     },
     topSubViewStyle: {
       flexDirection: 'row',
@@ -44,6 +45,7 @@ export const KOffersCardStyles = (
       letterSpacing: 1,
       color: colors.textColor,
       textTransform: 'uppercase',
+      fontWeight: '500',
     },
     descTextStyle: {
       ...Fonts.NewYorkMediumSemiBold(15),
@@ -51,6 +53,7 @@ export const KOffersCardStyles = (
       letterSpacing: 0.3,
       lineHeight: 20,
       marginTop: 12,
+      fontWeight: '600',
     },
   });
 };

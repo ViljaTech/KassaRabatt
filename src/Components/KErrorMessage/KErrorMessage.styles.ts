@@ -18,6 +18,7 @@ export const KErrorMessageStyles = (
       color: colors.redColor,
       marginLeft: 5,
       alignItems: 'baseline',
+      fontWeight: '500',
     },
   });
 };

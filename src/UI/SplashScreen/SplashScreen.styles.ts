@@ -7,6 +7,7 @@ export const splashScreenStyles = () => {
       color: '#000000',
       marginTop: 24,
       ...Fonts.SFProDisplayMedium(15),
+      fontWeight: '500',
     },
   });
 };

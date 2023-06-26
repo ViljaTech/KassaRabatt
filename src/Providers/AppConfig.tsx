@@ -50,6 +50,8 @@ export interface AppDataContextProps {
   setAppTheme: (_value: string) => void;
   authToken: string;
   setAuthToken: (_value: string) => void;
+  userLogin: string;
+  setUserLogin: (_value: string) => void;
   removeData: (_value: StorageKeys) => void;
   strings: any;
   language: string;
@@ -69,6 +71,8 @@ export const AppDataContext = createContext<AppDataContextProps>({
   setAppTheme: (_value: string) => {},
   authToken: '',
   setAuthToken: (_value: string) => {},
+  userLogin: '',
+  setUserLogin: (_value: string) => {},
   removeData: (_value: StorageKeys) => {},
   strings: EnglishStrings,
   language: '',
@@ -91,6 +95,8 @@ export const AppProvider: React.FC = (props: any) => {
     AppConfigData.defaultTheme,
   );
   const [authToken, setAuthToken] = useState<string>('');
+
+  const [userLogin, setUserLogin] = useState<string>('');
 
   useEffect(() => {
     initialize();
@@ -129,6 +135,10 @@ export const AppProvider: React.FC = (props: any) => {
         validLanguageCode ||
         AppConfigData.defaultLanguage,
     );
+
+    let type = await getData(StorageKeys.USER_LOGIN);
+    // console.log('UserType from appconfig init', type);
+    setUserLogin(type || '');
   };
 
   useEffect(() => {
@@ -194,6 +204,11 @@ export const AppProvider: React.FC = (props: any) => {
         setAuthToken: async (value: string) => {
           await storeData(StorageKeys.AUTH_TOKEN, value);
           setAuthToken(value);
+        },
+        userLogin,
+        setUserLogin: async (value: string) => {
+          await storeData<String>(StorageKeys.USER_LOGIN, value);
+          setUserLogin(value);
         },
         language,
         strings: strings(),

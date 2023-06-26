@@ -1,11 +1,4 @@
-import {
-  View,
-  Text,
-  TouchableOpacity,
-  Image,
-  ScrollView,
-  FlatList,
-} from 'react-native';
+import {View, Text, TouchableOpacity, Image, ScrollView} from 'react-native';
 import React, {useState} from 'react';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {PostRootStackParamList} from '../../Navigation/NavigationTypes';
@@ -37,12 +30,12 @@ const RabateDetails: React.FC<RabateDetailsProp> = ({navigation, route}) => {
   const renderHeaderSection = () => {
     return (
       <View style={styles.headerSectionStyle}>
-        <Text style={styles.headerTextStyle}>QR Codes</Text>
+        <Text style={styles.headerTextStyle}>{strings.qrCodes}</Text>
         <TouchableOpacity
           activeOpacity={0.8}
           onPress={() => navigation.goBack()}
           style={styles.mapTouchViewStyle}>
-          <Image source={images.backArrow} />
+          <Image source={images.backArrow} style={styles.backArrowStyle} />
         </TouchableOpacity>
       </View>
     );
@@ -50,12 +43,7 @@ const RabateDetails: React.FC<RabateDetailsProp> = ({navigation, route}) => {
 
   const renderTopSection = () => {
     return (
-      <View
-        style={{
-          height: 70,
-          backgroundColor: colors.appColor,
-          position: 'relative',
-        }}>
+      <View style={styles.companyLogoContainerStyle}>
         {renderCompanyLogoSection()}
       </View>
     );
@@ -80,13 +68,13 @@ const RabateDetails: React.FC<RabateDetailsProp> = ({navigation, route}) => {
       <View style={styles.companyDetaisSectionStyle}>
         <Text style={styles.titleTextStyle}>{companyData.title}</Text>
         <View style={styles.descTextViewStyle}>
-          <Text style={styles.companyDescTextStyle}>Rebate Up to </Text>
+          <Text style={styles.companyDescTextStyle}>{strings.rebateUpTo} </Text>
           <Text style={styles.percentageTextStyle}>
             {companyData.percentage}%{' '}
           </Text>
         </View>
         <KButton
-          title="Add to Favorite"
+          title={strings.addToFavorite}
           onPress={() => console.log('ccc')}
           imgUrl={images.icon}
           btnViewStyle={styles.btnViewStyle}
@@ -123,7 +111,7 @@ const RabateDetails: React.FC<RabateDetailsProp> = ({navigation, route}) => {
             {selectedCode?.percentage}%
           </Text>
           <Text style={styles.modalTextDescStyle}>
-            Rebate on all screwdrivers
+            {strings.rebateOnAllScrewdrivers}
           </Text>
           <Image source={images.qrBig} style={styles.bigQrCodeStyle} />
           <KButton

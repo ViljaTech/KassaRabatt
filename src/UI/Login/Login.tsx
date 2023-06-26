@@ -17,17 +17,24 @@ import {KTextInput} from '../../Components/KTextInput';
 import KErrorMessage from '../../Components/KErrorMessage';
 import {KButton} from '../../Components/KButton';
 import {KKeyboardAvoidingView} from '../../Components/KKeyBoardAvoidingView';
+import {StorageKeys, storeData} from '../../Storage';
 type NavigationProp = NativeStackScreenProps<PreRootStackParamList, 'Login'>;
 
 interface LoginProp extends NavigationProp {}
 const Login: React.FC<LoginProp> = ({navigation}) => {
   const styles = loginStyles();
-  const {images, strings, colors} = useAppData();
+  const {images, strings, colors, setUserLogin} = useAppData();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [emailErrorMsg, setEmailErrorMsg] = useState('');
   const [passwordErrorMsg, setPasswordErrorMsg] = useState('');
   const [passwordIsHide, setPasswordIsHide] = useState(true);
+
+  const tapOnLogin = async () => {
+    await storeData(StorageKeys.USER_LOGIN, StorageKeys.USER_LOGIN);
+    setUserLogin(StorageKeys.USER_LOGIN);
+    navigation.navigate('TabBar');
+  };
   const renderTopDecoratedView = () => {
     return (
       <View style={styles.decoratedViewStyle}>
@@ -128,7 +135,12 @@ const Login: React.FC<LoginProp> = ({navigation}) => {
   const renderBtnSection = () => {
     return (
       <View style={styles.btnSectionViewStyle}>
-        <KButton title={strings.signIn} onPress={() => console.log('cc')} />
+        <KButton
+          title={strings.signIn}
+          onPress={() => {
+            tapOnLogin();
+          }}
+        />
       </View>
     );
   };

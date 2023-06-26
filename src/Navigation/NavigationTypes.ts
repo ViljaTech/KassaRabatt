@@ -13,6 +13,8 @@ export type PreRootStackParamList = {
   PasswordRecovery: undefined;
   CreateNewPassword: undefined;
   RabateDetails: {data: any};
+  Categories: {data?: any};
+  EditProfile: undefined;
 };
 
 export type PostRootStackParamList = {
@@ -21,7 +23,11 @@ export type PostRootStackParamList = {
   Favorite: undefined;
   Search: undefined;
   Settings: undefined;
+  Login: undefined;
+  CreateNewPassword: undefined;
   RabateDetails: {data: any};
+  Categories: {data?: any};
+  EditProfile: undefined;
 };
 
 export type TabBarType = {

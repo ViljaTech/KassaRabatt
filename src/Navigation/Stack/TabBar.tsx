@@ -28,26 +28,10 @@ export const TabBar = ({}) => {
   const {colors, strings, images} = useAppData();
   const styles = navigationStyles(colors);
 
-  React.useEffect(() => {}, []); // 👈 don't miss it!
+  React.useEffect(() => {}, []);
 
   const TabIcon = (props: any) => {
     return <View style={styles.tabIconStyle}>{props.children}</View>;
-  };
-
-  const TabIcon2 = (props: any) => {
-    return <View>{props.children}</View>;
-  };
-
-  const bottomBarView = (focused: boolean) => {
-    return (
-      <View
-        style={
-          focused
-            ? styles.focusedBottomBarStyle
-            : styles.unFocusedBottomBarStyle
-        }
-      />
-    );
   };
 
   return (
@@ -58,7 +42,7 @@ export const TabBar = ({}) => {
         tabBarShowLabel: false,
         tabBarStyle: {
           height: Platform.OS === 'ios' ? (isIphoneBig() ? 100 : 90) : 70,
-          backgroundColor: colors.whiteColor,
+          backgroundColor: colors.appColor,
         },
       }}>
       <Tab.Screen
@@ -69,12 +53,18 @@ export const TabBar = ({}) => {
             return (
               <TabIcon focused={focused}>
                 <HomeIcon
-                  fillColor={focused.focused ? colors.appColor : '#000000'}
+                  fillColor={
+                    focused.focused ? colors.whiteColor : colors.blackColor
+                  }
                 />
                 <Text
                   style={[
                     styles.tabTextStyle,
-                    {color: focused.focused ? '#FDA228' : '#000000'},
+                    {
+                      color: focused.focused
+                        ? colors.whiteColor
+                        : colors.blackColor,
+                    },
                   ]}>
                   Home
                 </Text>
@@ -91,13 +81,19 @@ export const TabBar = ({}) => {
             return (
               <TabIcon focused={focused}>
                 <FavoriteIcon
-                  fillColor={focused.focused ? colors.appColor : '#000000'}
+                  fillColor={
+                    focused.focused ? colors.whiteColor : colors.blackColor
+                  }
                 />
                 <Text
                   style={[
                     styles.tabTextStyle,
                     ,
-                    {color: focused.focused ? '#FDA228' : '#000000'},
+                    {
+                      color: focused.focused
+                        ? colors.whiteColor
+                        : colors.blackColor,
+                    },
                   ]}>
                   Favorite
                 </Text>
@@ -114,13 +110,19 @@ export const TabBar = ({}) => {
             return (
               <TabIcon focused={focused}>
                 <SearchIcon
-                  fillColor={focused.focused ? colors.appColor : '#000000'}
+                  fillColor={
+                    focused.focused ? colors.whiteColor : colors.blackColor
+                  }
                 />
                 <Text
                   style={[
                     styles.tabTextStyle,
                     ,
-                    {color: focused.focused ? '#FDA228' : '#000000'},
+                    {
+                      color: focused.focused
+                        ? colors.whiteColor
+                        : colors.blackColor,
+                    },
                   ]}>
                   Search
                 </Text>
@@ -136,12 +138,18 @@ export const TabBar = ({}) => {
           tabBarIcon: (focused: any) => (
             <TabIcon focused={focused}>
               <SettingsIcon
-                fillColor={focused.focused ? colors.appColor : '#000000'}
+                fillColor={
+                  focused.focused ? colors.whiteColor : colors.blackColor
+                }
               />
               <Text
                 style={[
                   styles.tabTextStyle,
-                  {color: focused.focused ? '#FDA228' : '#000000'},
+                  {
+                    color: focused.focused
+                      ? colors.whiteColor
+                      : colors.blackColor,
+                  },
                 ]}>
                 Settings
               </Text>

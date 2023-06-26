@@ -18,6 +18,7 @@ export const KButtonStyles = (colors: colorType, props: KButtonProps) => {
       color: colors.blackColor,
       letterSpacing: 1,
       textTransform: 'uppercase',
+      fontWeight: '500',
     },
     imgStyles: {
       resizeMode: 'contain',

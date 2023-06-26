@@ -24,7 +24,7 @@ type NavigationProp = NativeStackScreenProps<PostRootStackParamList, 'Home'>;
 
 interface HomeProp extends NavigationProp {}
 const Home: React.FC<HomeProp> = ({navigation}) => {
-  const {colors, images} = useAppData();
+  const {colors, images, strings} = useAppData();
   const styles = homeStyle(colors);
   let siCarousel: any = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -35,7 +35,7 @@ const Home: React.FC<HomeProp> = ({navigation}) => {
   const renderHeaderSection = () => {
     return (
       <View style={styles.headerSectionStyle}>
-        <Text style={styles.headerTextStyle}>KassRabatt</Text>
+        <Text style={styles.headerTextStyle}>{strings.kassRabatt}</Text>
         <TouchableOpacity activeOpacity={0.8} style={styles.mapTouchViewStyle}>
           <Image source={images.mapIcon} />
         </TouchableOpacity>
@@ -81,22 +81,58 @@ const Home: React.FC<HomeProp> = ({navigation}) => {
       </View>
     );
   };
+  // let scrollOffsetY = useRef(new Animated.Value(0)).current;
+  // let Header_Max_Height = Dimensions.get('screen').height - 100;
+  // let Header_Min_Height = 60;
+  // const animateHeaderBackgroundColor = scrollOffsetY.interpolate({
+  //   inputRange: [0, Header_Max_Height - Header_Min_Height],
+  //   outputRange: ['blue', 'red'],
+  //   extrapolate: 'clamp',
+  // });
+  const [stickyHeader, setStickyHeader] = useState(false);
+  const [myAnimation, setMyAnimation] = useState(new Animated.Value(0));
+  const handleScroll = (event: any) => {
+    const scrollPosition = event.nativeEvent.contentOffset.y;
+
+    if (scrollPosition > 352) {
+      setStickyHeader(true);
+      // Animated.timing(myAnimation, {
+      //   toValue: 1,
+      //   duration: 160,
+      //   useNativeDriver: true,
+      // }).start(() => setStickyHeader(true));
+    }
+    if (scrollPosition < 352) {
+      setStickyHeader(false);
+      // Animated.timing(myAnimation, {
+      //   toValue: 1,
+      //   duration: 160,
+      //   useNativeDriver: true,
+      // }).start(() => setStickyHeader(false));
+    }
+  };
 
   const renderOptionsSection = () => {
     return (
-      <View style={styles.optionsSectionsStyle}>
+      <Animated.View
+        style={[
+          styles.optionsSectionsStyle,
+          {
+            backgroundColor: stickyHeader ? colors.appColor : 'transparent',
+          },
+        ]}>
         <FlatList
           horizontal
           style={{overflow: 'visible'}}
           showsHorizontalScrollIndicator={false}
           data={Options}
-          renderItem={renderOtions}
+          renderItem={renderOptions}
         />
-      </View>
+      </Animated.View>
     );
   };
 
-  const renderOtions = ({item, index}: any) => {
+  const renderOptions = ({item, index}: any) => {
     return (
       <TouchableOpacity
         key={index}
@@ -105,8 +141,13 @@ const Home: React.FC<HomeProp> = ({navigation}) => {
         style={[
           styles.optionsTouchViewStyle,
           {
-            backgroundColor:
-              selectedIndex === index ? colors.appColor : 'transparent',
+            backgroundColor: stickyHeader
+              ? selectedIndex === index
+                ? colors.whiteColor
+                : colors.appColor
+              : selectedIndex === index
+              ? colors.appColor
+              : '#F4F4F4',
           },
         ]}>
         <Text style={styles.optionTextStyle}>{item}</Text>
@@ -160,11 +201,14 @@ const Home: React.FC<HomeProp> = ({navigation}) => {
       />
       <SafeAreaProvider>
         <SafeAreaView style={styles.mainContainerStyle}>
-          {renderHeaderSection()}
           <ScrollView
             contentContainerStyle={{paddingBottom: 30}}
             showsVerticalScrollIndicator={false}
-            bounces={false}>
+            bounces={false}
+            scrollEventThrottle={5}
+            onScroll={handleScroll}
+            stickyHeaderIndices={[2]}>
+            {renderHeaderSection()}
             {renderCarouselAndPaginationSection()}
             {renderOptionsSection()}
             {renderCardsSection()}

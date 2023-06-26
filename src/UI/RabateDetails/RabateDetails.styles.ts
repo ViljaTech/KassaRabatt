@@ -16,30 +16,39 @@ export const rabateDetailsStyle = (colors: colorType) => {
       paddingBottom: 20,
     },
     headerSectionStyle: {
-      height: 70,
+      height: 40,
       backgroundColor: colors.appColor,
       position: 'relative',
       alignItems: 'center',
-      justifyContent: 'flex-start',
+      justifyContent: 'center',
     },
     headerTextStyle: {
-      ...Fonts.NewYorkMediumBold(17),
+      ...Fonts.NewYorkMediumBold(24),
       color: colors.textColor,
       letterSpacing: 0.3,
-      top: 3,
+      fontWeight: '700',
     },
     mapTouchViewStyle: {
       position: 'absolute',
       left: 10,
-      top: 3,
+      top: 6,
       width: 60,
       height: 40,
       alignItems: 'flex-start',
       justifyContent: 'flex-start',
     },
+    backArrowStyle: {
+      width: 30,
+      height: 30,
+    },
     middleSectionStyle: {
       position: 'relative',
       flex: 1,
+    },
+    companyLogoContainerStyle: {
+      height: 100,
+      backgroundColor: colors.appColor,
+      position: 'relative',
     },
     companyLogoViewStyle: {
       position: 'absolute',
@@ -58,7 +67,7 @@ export const rabateDetailsStyle = (colors: colorType) => {
       alignItems: 'center',
       width: 90,
       height: 90,
-      top: '25%',
+      top: '60%',
       backgroundColor: colors.whiteColor,
       borderRadius: 8,
     },
@@ -77,6 +86,7 @@ export const rabateDetailsStyle = (colors: colorType) => {
       color: colors.textColor,
       ...Fonts.SFProDisplayRegular(17),
       letterSpacing: 0.5,
+      fontWeight: '400',
     },
     descTextViewStyle: {
       flexDirection: 'row',
@@ -88,10 +98,12 @@ export const rabateDetailsStyle = (colors: colorType) => {
       color: colors.textColor,
       ...Fonts.SFProDisplayMedium(20),
       letterSpacing: 0.5,
+      fontWeight: '500',
     },
     percentageTextStyle: {
       ...percentageTextStyle,
       ...Fonts.SFProDisplayMedium(20),
+      fontWeight: '500',
     },
     btnViewStyle: {
       paddingHorizontal: 16,
@@ -104,6 +116,7 @@ export const rabateDetailsStyle = (colors: colorType) => {
       letterSpacing: 1,
       color: colors.whiteColor,
       textTransform: 'uppercase',
+      fontWeight: '500',
     },
     offersSectionStyle: {
       paddingHorizontal: 16,
@@ -112,6 +125,7 @@ export const rabateDetailsStyle = (colors: colorType) => {
     percentageTextStyle2: {
       ...percentageTextStyle,
       ...Fonts.SFProDisplayMedium(24),
+      fontWeight: '500',
     },
     bottomModalViewStyle: {
       padding: 20,
@@ -124,6 +138,7 @@ export const rabateDetailsStyle = (colors: colorType) => {
       ...Fonts.SFProDisplayRegular(15),
       letterSpacing: 0.07,
       marginTop: 8,
+      fontWeight: '400',
     },
     bigQrCodeStyle: {
       width: 196,
