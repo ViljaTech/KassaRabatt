@@ -17,35 +17,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" image="BootSplashLogo" translatesAutoresizingMaskIntoConstraints="NO" id="EZH-ip-NE8">
-                                <rect key="frame" x="110" y="164" width="100" height="240"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="BootSplashLogo" translatesAutoresizingMaskIntoConstraints="NO" id="J3L-Ca-FgO">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="240" id="Qjv-Tu-yEz"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="250" id="0ES-8j-F4d"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="250" id="2iT-ZV-pvI"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="250" id="3ZE-Bw-C1z"/>
+                                    <constraint firstAttribute="width" secondItem="J3L-Ca-FgO" secondAttribute="height" multiplier="430:839" id="4O9-28-jcu"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="220" id="4OQ-i7-fYd"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="250" id="5JT-C8-Er7"/>
+                                    <constraint firstAttribute="width" secondItem="J3L-Ca-FgO" secondAttribute="height" multiplier="201:250" id="7Nd-6k-u1B"/>
+                                    <constraint firstAttribute="width" secondItem="J3L-Ca-FgO" secondAttribute="height" multiplier="40:71" id="ADA-7G-SIr"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="245" id="AT6-uC-cqk"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="250" id="AVr-KJ-gvP"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="568" id="GZ4-mZ-Ymv"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="250" id="KlD-tl-EDq"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="250" id="L9n-Lt-BQg"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="250" id="PAG-ue-gaM"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="T5i-lM-hBV"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="220" id="VTf-1P-KDh"/>
+                                    <constraint firstAttribute="width" secondItem="J3L-Ca-FgO" secondAttribute="height" multiplier="201:205" id="YAk-Gq-JWq"/>
+                                    <constraint firstAttribute="width" secondItem="J3L-Ca-FgO" secondAttribute="height" multiplier="22:25" id="aho-Xe-NP6"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="220" id="bJb-hD-hWx"/>
+                                    <constraint firstAttribute="height" constant="250" id="hB5-SS-bB9"/>
+                                    <constraint firstAttribute="width" secondItem="J3L-Ca-FgO" secondAttribute="height" multiplier="22:25" id="hwD-rX-tyg"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="220" id="iKZ-VM-Xab"/>
+                                    <constraint firstAttribute="width" constant="250" id="kcH-Dj-PAv"/>
+                                    <constraint firstAttribute="width" secondItem="J3L-Ca-FgO" secondAttribute="height" multiplier="49:50" id="q4h-cF-Nh6"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="250" id="siL-xP-is7"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="250" id="tk5-Hy-S9s"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="250" id="u00-tW-eDc"/>
+                                    <constraint firstAttribute="width" secondItem="J3L-Ca-FgO" secondAttribute="height" multiplier="22:25" id="vZb-41-w3t"/>
+                                    <constraint firstAttribute="width" secondItem="J3L-Ca-FgO" secondAttribute="height" multiplier="40:71" id="wYW-05-bXg"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="250" id="xQ7-28-SxE"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="250" id="ybb-aE-DLa"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="320" id="yzm-lH-0Ez"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         <constraints>
-                            <constraint firstItem="EZH-ip-NE8" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="8J7-b5-aco"/>
-                            <constraint firstItem="EZH-ip-NE8" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="GgG-0r-aDg"/>
-                            <constraint firstItem="EZH-ip-NE8" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Hfh-qN-8lZ"/>
-                            <constraint firstItem="EZH-ip-NE8" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="J4e-Hc-W24"/>
-                            <constraint firstItem="EZH-ip-NE8" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="TZf-PQ-ckm"/>
-                            <constraint firstItem="EZH-ip-NE8" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="X7g-Cl-QlB"/>
-                            <constraint firstItem="EZH-ip-NE8" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="lOX-eM-aPK"/>
-                            <constraint firstItem="EZH-ip-NE8" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="x3l-nE-bHt"/>
-                            <constraint firstItem="EZH-ip-NE8" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="yaO-sA-Axc"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="J3L-Ca-FgO" secondAttribute="trailing" id="Lcr-H6-0Bi"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="J3L-Ca-FgO" secondAttribute="bottom" id="SiN-GR-3xJ"/>
+                            <constraint firstItem="J3L-Ca-FgO" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-100" id="VMc-E9-pXM"/>
+                            <constraint firstItem="J3L-Ca-FgO" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-80" id="YQK-BG-L12"/>
+                            <constraint firstItem="J3L-Ca-FgO" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" id="rvr-WC-DP2"/>
+                            <constraint firstItem="J3L-Ca-FgO" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" id="t1z-F0-dJo"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+            <point key="canvasLocation" x="50.625" y="373.94366197183098"/>
         </scene>
     </scenes>
     <resources>
-        <image name="BootSplashLogo" width="100" height="76"/>
+        <image name="BootSplashLogo" width="200" height="152"/>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

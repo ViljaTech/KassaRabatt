@@ -5,7 +5,7 @@
         <!-- Customize your theme here. -->
         <!-- <item name="android:editTextBackground">@drawable/launch_screen</item> -->
         <item name="android:statusBarColor">#FDA228</item>
-        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowFullscreen">true</item>
     </style>
 
     <style name="BootTheme" parent="Theme.SplashScreen">
@@ -13,5 +13,12 @@
     <item name="windowSplashScreenAnimatedIcon">@mipmap/bootsplash_logo</item>
     <item name="postSplashScreenTheme">@style/AppTheme</item>
   </style>
+
+   <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="windowSplashScreenBackground">@color/yellow</item>
+        <item name="android:windowBackground">#FFFFFF</item>
+        <!-- <item name="android:background">@drawable/background_splash</item> -->
+        <item name="android:windowDisablePreview">true</item>
+    </style>
 
 </resources>
