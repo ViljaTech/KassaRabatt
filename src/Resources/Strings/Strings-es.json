@@ -34,5 +34,7 @@
   "changePassword": "Change password",
   "save": "Save",
   "logout": "Logout",
-  "currentPassword": "Current Password"
+  "currentPassword": "Current Password",
+  "pleaseAllowLocation": "Please, Allow Access to Your Location",
+  "goToSettings": "go to settings"
 }

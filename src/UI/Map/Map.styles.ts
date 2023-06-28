@@ -39,18 +39,26 @@ export const mapStyles = (colors: colorType) => {
       height: 24,
     },
     emptyViewStyle: {
-      width: '100%',
-      height: '100%',
+      flex: 0.8,
       flexDirection: 'column',
       alignItems: 'center',
       justifyContent: 'center',
     },
     emptyViewTextStyle: {
-      ...Fonts.SFProDisplayRegular(17),
+      ...Fonts.Poppins(17),
       color: colors.textColor,
       letterSpacing: 0.5,
       marginTop: 16,
       fontWeight: '400',
+    },
+    map: {
+      width: '100%',
+      height: '100%',
+    },
+    btnViewStyle: {
+      marginTop: 27,
+      paddingHorizontal: 17,
+      paddingVertical: 7,
     },
   });
 };

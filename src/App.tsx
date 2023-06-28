@@ -11,8 +11,11 @@ import {SafeAreaProvider} from 'react-native-safe-area-context';
 import {AppProvider} from './Providers/AppConfig';
 import {AppNavigationProvider} from './Navigation/Navigation';
 import SplashScreen from 'react-native-splash-screen';
+import {enableLatestRenderer} from 'react-native-maps';
+
 const App = () => {
   useEffect(() => {
+    enableLatestRenderer();
     if (Platform.OS === 'android') {
       setTimeout(() => SplashScreen.hide(), 1000);
     }

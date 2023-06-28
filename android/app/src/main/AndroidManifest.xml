@@ -1,7 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <application
       android:name=".MainApplication"
       android:label="@string/app_name"
@@ -10,8 +11,8 @@
       android:allowBackup="false"
       android:theme="@style/SplashTheme">
       <meta-data
-        android:name="com.google.android.gms.wallet.api.enabled"
-        android:value="true" />
+     android:name="com.google.android.geo.API_KEY"
+     android:value="AIzaSyCrwYdgmmW6PC-P71wEB_cLSYrJuxY70d0"/>
       <activity
         android:name=".MainActivity"
         android:label="@string/app_name"
