@@ -5,7 +5,6 @@ import {
 import React, {useRef} from 'react';
 import {PreLoginStackRoutes} from './Stack/PreLoginStack';
 import {useAppData} from '../Providers/AppConfig';
-import RNBootSplash from 'react-native-bootsplash';
 export const AppNavigationProvider = () => {
   const navigationRef =
     useRef<NavigationContainerRef<ReactNavigation.RootParamList> | null>(null);
@@ -18,7 +17,6 @@ export const AppNavigationProvider = () => {
         navigationRef.current = val;
       }}
       onReady={() => {
-        RNBootSplash.hide({fade: true});
         routeNameRef.current = navigationRef.current?.getCurrentRoute()?.name;
       }}
       onStateChange={async () => {

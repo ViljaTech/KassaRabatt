@@ -12,6 +12,7 @@ import CreateNewPassword from '../../UI/CreateNewPassword/CreateNewPassword';
 import RabateDetails from '../../UI/RabateDetails/RabateDetails';
 import Categories from '../../UI/Categories/Categories';
 import EditProfile from '../../UI/EditProfile/EditProfile';
+import Map from '../../UI/Map/Map';
 
 const Stack = createNativeStackNavigator<PreRootStackParamList>();
 
@@ -34,6 +35,7 @@ export const PreLoginStackRoutes = () => {
       <Stack.Screen name={'RabateDetails'} component={RabateDetails} />
       <Stack.Screen name={'Categories'} component={Categories} />
       <Stack.Screen name={'EditProfile'} component={EditProfile} />
+      <Stack.Screen name={'Map'} component={Map} />
       <Stack.Screen
         name="TabBar"
         options={{gestureEnabled: false}}

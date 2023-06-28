@@ -28,7 +28,7 @@ export const rabateDetailsStyle = (colors: colorType) => {
       letterSpacing: 0.3,
       fontWeight: '700',
     },
-    mapTouchViewStyle: {
+    backBtnTouchViewStyle: {
       position: 'absolute',
       left: 10,
       top: 6,

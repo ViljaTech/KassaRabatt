@@ -15,6 +15,7 @@ export type PreRootStackParamList = {
   RabateDetails: {data: any};
   Categories: {data?: any};
   EditProfile: undefined;
+  Map: undefined;
 };
 
 export type PostRootStackParamList = {
@@ -28,6 +29,7 @@ export type PostRootStackParamList = {
   RabateDetails: {data: any};
   Categories: {data?: any};
   EditProfile: undefined;
+  Map: undefined;
 };
 
 export type TabBarType = {

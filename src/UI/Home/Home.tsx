@@ -36,7 +36,10 @@ const Home: React.FC<HomeProp> = ({navigation}) => {
     return (
       <View style={styles.headerSectionStyle}>
         <Text style={styles.headerTextStyle}>{strings.kassRabatt}</Text>
-        <TouchableOpacity activeOpacity={0.8} style={styles.mapTouchViewStyle}>
+        <TouchableOpacity
+          onPress={() => navigation.navigate('Map')}
+          activeOpacity={0.8}
+          style={styles.mapTouchViewStyle}>
           <Image source={images.mapIcon} />
         </TouchableOpacity>
       </View>

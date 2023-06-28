@@ -4,8 +4,8 @@
     <item
         android:drawable="@color/yellow"/>
     <item
-        android:width="200dp"
-        android:drawable="@mipmap/ss"
+        android:width="250dp"
+        android:drawable="@mipmap/klogo"
         android:gravity="center" />
 
 

@@ -34,7 +34,7 @@ const RabateDetails: React.FC<RabateDetailsProp> = ({navigation, route}) => {
         <TouchableOpacity
           activeOpacity={0.8}
           onPress={() => navigation.goBack()}
-          style={styles.mapTouchViewStyle}>
+          style={styles.backBtnTouchViewStyle}>
           <Image source={images.backArrow} style={styles.backArrowStyle} />
         </TouchableOpacity>
       </View>
