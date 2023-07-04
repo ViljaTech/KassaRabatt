@@ -27,6 +27,7 @@ export const lightImages = {
   termsAndConditions: require('../Resources/Images/T&C.png'),
   logoutIcon: require('../Resources/Images/logout.png'),
   location: require('../Resources/Images/location.png'),
+  onBoard: require('../Resources/Images/onBoard.png'),
   coverImage: require('../Resources/Images/coverImage.png'),
   coverImage2: require('../Resources/Images/coverImage2.png'),
   companyLogo: require('../Resources/Images/companyLogo.png'),

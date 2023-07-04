@@ -38,8 +38,8 @@ export const rabateDetailsStyle = (colors: colorType) => {
       justifyContent: 'flex-start',
     },
     backArrowStyle: {
-      width: 30,
-      height: 30,
+      width: 24,
+      height: 24,
     },
     middleSectionStyle: {
       position: 'relative',

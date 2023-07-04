@@ -28,7 +28,7 @@ const SplashScreen: React.FC<SplashScreenProp> = ({navigation}) => {
     if (userLogin === StorageKeys.USER_LOGIN) {
       navigation.navigate('TabBar');
     } else {
-      navigation.navigate('Login');
+      navigation.navigate('OnBoarding');
     }
   };
   return (

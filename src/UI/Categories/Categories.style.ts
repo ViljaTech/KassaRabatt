@@ -22,7 +22,7 @@ export const categoriesStyles = (colors: colorType) => {
     },
     backArrowTouchViewStye: {
       position: 'absolute',
-      left: 10,
+      left: 8,
       bottom: 0,
       width: 40,
       height: 40,

@@ -13,6 +13,7 @@ import RabateDetails from '../../UI/RabateDetails/RabateDetails';
 import Categories from '../../UI/Categories/Categories';
 import EditProfile from '../../UI/EditProfile/EditProfile';
 import Map from '../../UI/Map/Map';
+import OnBoarding from '../../UI/OnBoarding/OnBoarding';
 
 const Stack = createNativeStackNavigator<PreRootStackParamList>();
 
@@ -27,6 +28,7 @@ export const PreLoginStackRoutes = () => {
       initialRouteName={'SplashScreen'}
       screenOptions={{headerShown: false, animation: 'fade'}}>
       <Stack.Screen name={'SplashScreen'} component={SplashScreen} />
+      <Stack.Screen name={'OnBoarding'} component={OnBoarding} />
       <Stack.Screen name={'Login'} component={Login} />
       <Stack.Screen name={'SignUp'} component={Signup} />
       <Stack.Screen name={'SignInWithBank'} component={SignInWithBank} />
